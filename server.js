@@ -8,4 +8,10 @@ app.use(express.static(__dirname + '/public'));
 
 app.listen(port, () => {
     console.log('Listening on port: ' + port);
-})
+});
+
+io.on('connection', (socket) => {
+    socket.on('stream', (image) => {
+        socket.broadcast.emit('stream', image);
+    })
+});

@@ -5,9 +5,11 @@
     <title>Live Video Call Aplha</title>
 </head>
 <body onload="init();">
-    <video src="" id="video" autoplay="true"></video>
     <canvas id="preview" style="display: none;"></canvas>
-    <img id="play">
+    <p>Your Camera:</p>
+    <video src="" id="video" autoplay="true"></video><br><br>
+    <p>Your Partner:</p>
+    <img id="play" style="border: 1px solid black">
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <script src="app.js"></script>
 </body>

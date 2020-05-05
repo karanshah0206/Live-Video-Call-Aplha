@@ -6,7 +6,7 @@ var port = 3000;
 
 app.use(express.static(__dirname + '/public'));
 
-app.listen(port, () => {
+http.listen(port, () => {
     console.log('Listening on port: ' + port);
 });
 
